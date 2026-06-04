@@ -134,6 +134,22 @@ li {
   color: #777777;
 }
 
+.publication-title-row {
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.publication-title {
+  min-width: 0;
+}
+
+.publication-venue {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
 .paper-note {
   color: #222222;
 }
@@ -185,5 +201,14 @@ li {
   h1 {
     font-size: 150%;
     line-height: 1.1;
+  }
+
+  .publication-title-row {
+    display: block;
+  }
+
+  .publication-venue {
+    display: block;
+    margin-top: 0.15em;
   }
 }
