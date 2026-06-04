@@ -124,6 +124,10 @@ li {
   padding-left: 1.2em;
 }
 
+.publication-list {
+  padding-right: 0;
+}
+
 .meta {
   color: #555555;
   font-size: 92%;
@@ -135,10 +139,11 @@ li {
 }
 
 .publication-title-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
   gap: 18px;
-  justify-content: space-between;
   align-items: baseline;
+  width: 100%;
 }
 
 .publication-title {
@@ -146,7 +151,7 @@ li {
 }
 
 .publication-venue {
-  flex: 0 0 auto;
+  justify-self: end;
   white-space: nowrap;
 }
 
